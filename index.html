@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="calculator">
     <div id="Calculator">
       <input type="text" id="display" readonly />
       <div id="button-container">
@@ -73,12 +74,13 @@
        document.querySelector(`#display`).value = display"
        >.</button>
       
-       <button
+       <button class="btn-0"
       onclick="display= display + `0` ;
       document.querySelector(`#display`).value = display"
        >0</button>
       </div>
     </div>
+  </div>
     <script>
       let display = "";
       document.querySelector(`#display`).value = display;
